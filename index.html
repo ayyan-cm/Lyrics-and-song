@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Code Editor — Play Spotify</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Mini Code Editor</h1>
+        <div class="controls">
+          <label for="lang">Language</label>
+          <select id="lang">
+            <option value="python" selected>Python</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <button id="run">Run ▶</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="editor-wrap">
+          <pre id="editor" contenteditable="true" spellcheck="false" aria-label="code editor">#You can write you own code !!
+
+def play_music():
+    play(who_i_am)</pre>
+        </div>
+
+        <aside class="output">
+          <h2>Output</h2>
+          <div id="message">Press Run to execute the snippet.</div>
+          <div id="spotify-container"></div>
+
+          <!-- Inline lyrics box shown under Output when a snippet runs -->
+          <div id="lyrics-box" class="lyrics hidden">
+            <h3>Lyrics</h3>
+            <div class="lyrics-window">
+              <pre id="lyrics"></pre>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        <small>All rights reserved. © 2025 Ayyan</small>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+</html>

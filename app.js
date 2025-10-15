@@ -11,7 +11,12 @@
   // Hardcoded Spotify track and sample lyrics (only short excerpt to avoid copyright issues)
   const SPOTIFY_TRACK_URI =
     "https://open.spotify.com/embed/track/32E2AGkk15IU9JMZUGs7Ih";
-  const LYRICS_EXCERPT = `U can call me a raja
+  const LYRICS_EXCERPT = `
+...
+...
+...
+...
+U can call me a raja
 Cause i am king of the whole world
 U can call me a raja
 Naan yaar yaar
@@ -75,7 +80,7 @@ Take it to the top like what!`;
   let scrollState = {
     raf: null,
     startTime: null,
-    duration: 10000,
+    duration: 5000,
     paused: false,
     pauseAt: 0,
   };
